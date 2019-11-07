@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Custom -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Login</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" class="logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="register.html"> Register</a>
+          </li>
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="login.html"> Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- Showcase -->
+  <section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-5">
+            Property Searching Just Got So Easy
+          </h1>
+          <div class="search">
+            <form action="search.html">
+              <!-- Form Row 1 -->
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">Type</label>
+                  <select name="state" class="form-control">
+                    <option selected="true" disabled="disabled">Type (All)</option>
+                    <option value="BL">Appartment</option>
+                    <option value="CN">Individual House</option>
+                    <option value="HD">Villa</option>
+                  </select>
+                </div>
+
+
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">City</label>
+                  <select name="state" class="form-control">
+                    <option selected="true" disabled="disabled">City</option>
+                    <option value="BL">Bangalore</option>
+                    <option value="CN">Chennai</option>
+                    <option value="HD">Hyderabad</option>
+                    <option value="MB">Mumbai</option>
+                    <option value="KL">Kolkata</option>
+                    <option value="DL">Delhi</option>
+                  </select>
+                </div>
+              </div>
+              <!-- Form Row 2 -->
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label class="sr-only">Bedrooms</label>
+                  <select name="bedrooms" class="form-control">
+                    <option selected="true" disabled="disabled">Bedrooms (All)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <select name="price" class="form-control" id="type">
+                    <option selected="true" disabled="disabled">Max Price (Any)</option>
+                    <option value="5000">5000</option>
+                    <option value="10000">10000</option>
+                    <option value="150000">15000</option>
+                    <option value="20000">20000</option>
+                    <option value="30000">30000</option>
+                    <option value="50000">50000</option>
+                    <option value="70000">70000</option>
+                    <option value="80000">80000</option>
+                    <option value="90000">90000</option>
+                    <option value="100000">1Lakh+</option>
+                  </select>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-block mt-4" type="submit">Submit form</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Listings -->
+  <section id="listings" class="py-5">
+    <div class="container">
+      <h3 class="text-center mb-3">Latest Listings</h3>
+      <div class="row">
+        <!-- Listing 1 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-secondary text-white">Rs.10,000</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">Raghuvanahalli</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Bangalore, 560062</p>
+              </div>
+              <hr>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Sqft: 2500</div>
+                <div class="col-6">
+                  <i class="fas fa-bed"></i> Bedrooms: 3</div>
+              </div>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Bathrooms: 2</div>
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Floor: 2nd</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Listing 2 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-secondary text-white">Rs.10,000</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">Raghuvanahalli</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Bangalore, 560062</p>
+              </div>
+              <hr>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Sqft: 2500</div>
+                <div class="col-6">
+                  <i class="fas fa-bed"></i> Bedrooms: 3</div>
+              </div>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Bathrooms: 2</div>
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Floor: 2nd</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listing 3 -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-secondary text-white">Rs.10,000</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">Raghuvanahalli</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Bangalore, 560062</p>
+              </div>
+              <hr>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Sqft: 2500</div>
+                <div class="col-6">
+                  <i class="fas fa-bed"></i> Bedrooms: 3</div>
+              </div>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Bathrooms: 2</div>
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Floor: 2nd</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-secondary text-white">Rs.10,000</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">Raghuvanahalli</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Bangalore, 560062</p>
+              </div>
+              <hr>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Sqft: 2500</div>
+                <div class="col-6">
+                  <i class="fas fa-bed"></i> Bedrooms: 3</div>
+              </div>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Bathrooms: 2</div>
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Floor: 2nd</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-secondary text-white">Rs.10,000</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">Raghuvanahalli</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Bangalore, 560062</p>
+              </div>
+              <hr>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Sqft: 2500</div>
+                <div class="col-6">
+                  <i class="fas fa-bed"></i> Bedrooms: 3</div>
+              </div>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Bathrooms: 2</div>
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Floor: 2nd</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card listing-preview">
+            <img class="card-img-top" src="assets/img/homes/home-1.jpg" alt="">
+            <div class="card-img-overlay">
+              <h2>
+                <span class="badge badge-secondary text-white">Rs.10,000</span>
+              </h2>
+            </div>
+            <div class="card-body">
+              <div class="listing-heading text-center">
+                <h4 class="text-primary">Raghuvanahalli</h4>
+                <p>
+                  <i class="fas fa-map-marker text-secondary"></i> Bangalore, 560062</p>
+              </div>
+              <hr>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-th-large"></i> Sqft: 2500</div>
+                <div class="col-6">
+                  <i class="fas fa-bed"></i> Bedrooms: 3</div>
+              </div>
+              <div class="row py-1 text-secondary">
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Bathrooms: 2</div>
+                <div class="col-6">
+                  <i class="fas fa-bath"></i> Floor: 2nd</div>
+              </div>
+              <hr>
+              <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script src="assets/js/jquery-3.3.1.min.js "></script>
+  <script src="assets/js/bootstrap.bundle.min.js "></script>
+  <script src="assets/js/main.js "></script>
+</body>
+
+</html>

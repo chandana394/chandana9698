@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Custom -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Login</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" class="logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mr-3">
+            <a class="nav-link" href="logout.php"> logout</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <div class="container">
+    <hr>
+      <h1 class="display-5 text-center">Add Home</h1>
+      <hr>
+        <form>
+          <div class="row pt-5">
+          <div class="col-md-6 form-group">
+            <label>Title</label>
+            <input type="Text" class="form-control" id="exampleFormControlInput1" placeholder="Locality or area">
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Address</label>
+            <input type="Text" class="form-control" id="exampleFormControlInput1" placeholder="Address">
+          </div>
+          </div>
+          <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="exampleFormControlSelect1">City</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option value="BL">Bangalore</option>
+                <option value="CN">Chennai</option>
+                <option value="HD">Hyderabad</option>
+                <option value="MB">Mumbai</option>
+                <option value="KL">Kolkata</option>
+                <option value="DL">Delhi</option>
+            </select>
+          </div>
+          <div class="col-md-6 form-group">
+            <label>Zipcode</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Zip">
+          </div>
+          </div>
+          
+          <!-- row 3 -->
+          <hr>
+         <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="exampleFormControlSelect1">Bedrooms</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                  </select>
+                </div>
+
+          <div class="col-md-6 form-group">
+            <label for="exampleFormControlSelect1">Bathrooms</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                  </select>
+                </div>
+              </div>
+              <!-- row 4 -->
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <label>Square feet</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Sqft">
+            </div>
+            <div class="col-md-6 form-group">
+              <label>Price</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1"placeholder="Rupees">
+            </div>
+          </div>
+        <!-- row 5 -->
+        <div class="row">
+          <div class="col-md-10 form-group">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tell us more about your house..." rows="3"></textarea>
+          </div>
+        </div>
+        <hr>
+
+        <!-- row 6 -->
+        <div class="form-group">
+          <label for="exampleFormControlFile1">Main photo</label>
+          <input type="file" class="form-control-file"  id="exampleFormControlFile1">
+        </div>
+        <hr>
+        <!-- row 7 -->
+        <div class="row">
+          <div class="col-md-4 form-group">
+          <label for="exampleFormControlFile1">photo 1</label>
+          <input type="file" class="form-control-file"  id="exampleFormControlFile1">
+          </div>
+          <div class="col-md-4 form-group">
+          <label for="exampleFormControlFile1">photo 2</label>
+          <input type="file" class="form-control-file"  id="exampleFormControlFile1">
+          </div>
+          <div class="col-md-4 form-group">
+          <label for="exampleFormControlFile1">photo 3</label>
+          <input type="file" class="form-control-file"  id="exampleFormControlFile1">
+          </div>
+        </div>
+
+        <!-- row 8 -->
+        <div class="row">
+          <div class="col-md-4 form-group">
+          <label for="exampleFormControlFile1">photo 1</label>
+          <input type="file" class="form-control-file"  id="exampleFormControlFile1">
+          </div>
+          <div class="col-md-4 form-group">
+          <label for="exampleFormControlFile1">photo 2</label>
+          <input type="file" class="form-control-file"  id="exampleFormControlFile1">
+          </div>
+          <div class="col-md-4 form-group">
+          <label for="exampleFormControlFile1">photo 3</label>
+          <input type="file" class="form-control-file"  id="exampleFormControlFile1">
+          </div>
+        </div>
+        <hr>
+        <button class="col-md-4 btn btn-secondary btn-block mt-4 mb-5" type="submit">Submit</button>
+        <hr>
+        </form>
+   </div>
+
+
+  
+
+
+ 
+  <script src="assets/js/jquery-3.3.1.min.js "></script>
+  <script src="assets/js/bootstrap.bundle.min.js "></script>
+  <script src="assets/js/main.js "></script>
+</body>
+
+</html>

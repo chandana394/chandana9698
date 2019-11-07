@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+  background-image: url("img4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: gray;
+}
+
+.navbar a {
+  float: right;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 22px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: skyblue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+ <font size="22px" color="white"> <a href="help.php">HELP</a></font>
+ 
+  <div class="dropdown">
+    <button class="dropbtn">REGISTER
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="register.html">OWNER</a>
+      <a href="tenant.html">TENANT</a>
+     
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">LOGIN
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="login_own.php">OWNER</a>
+      <a href="login1.php">TENANT</a>
+      <a href="login1.php">ADMIN</a>
+    </div>
+  </div>
+ <font size="22px">  <a href="home.php">HOME</a></font>
+ <center><font size="25" color="black"><i><u>KONANKI HOMES</u></i></font></center>
+</div>
+
+
+
+</body>
+</html>
